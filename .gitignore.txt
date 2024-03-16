@@ -1,0 +1,33 @@
+# Ignorar archivos temporales
+*~
+
+# Ignorar archivos de respaldo de Windows
+Thumbs.db
+Desktop.ini
+
+# Ignorar archivos de registro
+*.log
+
+# Ignorar directorio de dependencias de Node.js
+/node_modules
+
+# Ignorar archivos de configuración específicos para desarrolladores
+.env
+
+# Ignorar archivos compilados
+*.exe
+*.dll
+*.obj
+*.lib
+
+# Ignorar archivos de caché de Visual Studio
+.vs/
+
+# Ignorar archivos de caché de Rider
+.idea/
+
+# Ignorar archivos de caché de Sublime Text
+.sublime-project
+.sublime-workspace
+
+MEDIA/*

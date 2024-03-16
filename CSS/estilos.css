@@ -3,11 +3,23 @@
 }
 /*El body el vaig flex per poder encaixar tot bé*/
 body {
-    display: flex;
     justify-content: center;
     background-color: #F1FADA;
     margin: 0;
 
+}
+body::before {
+    /* Esto es para crear una capa transparente oscura que ocupe toda la pantalla,
+    la situo en una capa z -1 para que no se vea, la sacaré solo cuando se invoque el menu lateral. */
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+    display: none;
 }
 /*media query per mobils, tablets, etc*/
 @media only screen and (max-width: 1000px) {
@@ -37,14 +49,13 @@ body {
     .columna-izquierda h1{
         flex: 20%
     }
-    .columna-derecha {
+    .menu {
         order: 1;
         flex: 100%;
     }
     main {
         order: 2;
         flex: 100%;
-
     }
     nav {
         flex: 60%;
@@ -58,6 +69,7 @@ body {
         min-height: 100vh;
         display: flex;
         flex-wrap: wrap;
+        z-index: 0;
     }    
     img {
         width: 100%;
@@ -71,20 +83,37 @@ body {
         background-color: #2D9596;
         padding: 20px;
         flex: 20%;
-        order: 0;
+        order: 3;
+        max-width: 305px;
     }
-    .columna-derecha {
+    .menu {
         flex: 20%;
-        order: 2;
+        order: 0;
+        z-index: 2;
+    }
+    .precursor-menu {
+        order: 1;
     }
     main {
-        order: 1;
+        order: 2;
         flex: 60%;
     }
     nav {
         height: 100%;
         max-height: 500px;
     }
+}
+.cruz {
+    position: absolute;
+    top: 5%;
+    right: 10%;    
+    font-size: 3rem;
+    font-weight: 900;
+}
+.separador {
+    width: 100%;
+    height: 0px;
+    border: 2px black solid;
 }
 .columna-izquierda h1 { /*titol logo*/
     font-family: sans-serif;
@@ -120,19 +149,30 @@ nav a {
     color: black;
     font-weight: bold;
 }
-.columna-derecha {
+.menu {
     padding: 1%;
-    display: flex;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 30vw;
     background-color: #2D9596;
     justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
+    z-index: 2;
 }
+.enseñar {
+    display: flex;
+}
+
 .titulo {
     /*titol de cada pagina*/
     font-family: Lucida Console;
     color: white;
     text-decoration: underline;
+    align-self: center;
 }
 
 main {

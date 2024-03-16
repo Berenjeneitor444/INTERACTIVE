@@ -10,32 +10,43 @@
 
 <body>
     <div class="flex">
+        <div class="columna-boton"></div>
         <div class="columna-izquierda">
-            <img src="../MULTIMEDIA/man.png" alt="shrek_arabe">
+            <img src="../MEDIA/man.png" alt="shrek_arabe">
             <h1>¿Has soñado alguna vez con este hombre?</h1>
-            <nav>
-                <ul>
-                    <a href="MAIN.html">
-                        <li>Inicio</li>
-                    </a>
-                    <a href="Teorias.html">
-                        <li>Teorias</li>
-                    </a>
-                    <a href="sueños.html">
-                        <li>Sueños</li>
-                    </a>
-                </ul>
-            </nav>
+            <div class="separador"></div>
+            <h1 class="titulo">Historia</h1>
+            <aside>
+                <h3>Anuncios</h3>
+                <a href="https://www.youtube.com/watch?v=eBGIQ7ZuuiU"><img src="../MEDIA/JAMONACO.jpg" alt="jamon"></a>
+            </aside>
         </div>
-            <div class="columna-derecha">
-                    <h1 class="titulo">Historia</h1>
-                <aside>
-                    <h3>Anuncios</h3>
-                    <a href="https://www.youtube.com/watch?v=eBGIQ7ZuuiU"><img src="../MULTIMEDIA/JAMONACO.jpg" alt="jamon"></a>
-
-                </aside>
+        <div class="precursor-menu">
+            <button type="button" onclick="menu('menu-0')">☰</button>
+        </div>
+            <div class="menu" id="menu-0" >
+                <div class="cruz" onclick="menu('menu-0')">
+                    <a href="#" style="text-decoration: none; color: black;">
+                        <!--<a> cuya unica función és que el mouse reaccione cuando pasa por encima
+                            , no dirige a ningun sitio, por eso el #-->
+                        ×
+                    </a>
+                </div>
+                <nav>
+                    <ul>
+                        <a href="MAIN.html">
+                            <li>Inicio</li>
+                        </a>
+                        <a href="Teorias.html">
+                            <li>Teorias</li>
+                        </a>
+                        <a href="sueños.html">
+                            <li>Sueños</li>
+                        </a>
+                    </ul>
+                </nav>
             </div>
-        <main class="main">
+        <main>
             <p>Este es un caso misterioso de una entidad conocida como shrek arabe que se manifiesta en los sueños de la
                 gente de alrededor de todas las ciudades del mundo cada noche.
                 A menudo muchos reportan tener sueños agradables con esta entidad, ofreciendoles consejos sobre las
@@ -63,7 +74,7 @@
 
             <p>Como se puede observar, este es un caso muy serio del que no se debe bromear.</p>
             <div class="cont-img">
-                <img src="../MULTIMEDIA/creepy.png" alt="imagen_miedo">
+                <img src="../MEDIA/creepy.png" alt="imagen_miedo">
             </div>
             <p>Esta web se ha diseñado con el fin de ofrecer recursos divulgativos sobre este misterio y desentrañar de donde viene este fenomeno</p>
         </main>
@@ -78,6 +89,7 @@
             </address>
         </footer>
     </div>
+    <script src="../JS/Scripts.js"></script>
 </body>
 
 </html>
