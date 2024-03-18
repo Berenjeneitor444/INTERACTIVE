@@ -1,37 +1,49 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Teorias</title>
-        <link rel="stylesheet" href="../CSS/estilos.css">
-    </head>
-    <body>
-        <div class="flex">
-            <div class="columna-izquierda">
-                <img src="../MEDIA/man.png" alt="shrek_arabe">
-                <h1>¿Has soñado alguna vez con este hombre?</h1>
-                <nav>
-                    <ul>
-                        <a href="MAIN.html">
-                            <li>Inicio</li>
-                        </a>
-                        <a href="Teorias.html">
-                            <li>Teorias</li>
-                        </a>
-                        <a href="sueños.html">
-                            <li>Sueños</li>
-                        </a>
-                    </ul>
-                </nav>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿Has soñado con este hombre?</title>
+    <link rel="stylesheet" href="../CSS/estilos.css">
+</head>
+
+<body>
+    <div class="flex">
+        <header>
+            <img src="../MEDIA/man.png" alt="shrek_arabe">
+            <h1>¿Has soñado alguna vez con este hombre?</h1>
+            <div class="separador"></div>
+            <h1 class="titulo">Teorias</h1>
+            <aside>
+                <h3>Anuncios</h3>
+                <a href="https://www.youtube.com/watch?v=eBGIQ7ZuuiU"><img src="../MEDIA/JAMONACO.jpg" alt="jamon"></a>
+            </aside>
+        </header>
+        <div class="precursor-menu">
+            <button type="button" onclick="menu('menu-2')">☰</button>
+        </div>
+        <div class="menu" id="menu-2">
+            <div class="cruz" onclick="menu('menu-2')">
+                <a href="javascript:void(0)" style="text-decoration: none; color: black;">
+                    <!--<a> cuya unica función és que el mouse reaccione cuando pasa por encima
+                        , no dirige a ningun sitio, el javascript:void(0) evita que la pagina se recargue-->
+                    ×
+                </a>
             </div>
-            <div class="columna-derecha">
-                <h1 class="titulo">Historia</h1>
-                <aside>
-                    <h3>Anuncios</h3>
-                    <a href="https://www.youtube.com/watch?v=eBGIQ7ZuuiU"><img src="../MEDIA/JAMONACO.jpg" alt="jamon"></a>
-                </aside>
-            </div>
+            <nav>
+                <ul>
+                    <a href="MAIN.html">
+                        <li>Inicio</li>
+                    </a>
+                    <a href="Teorias.html">
+                        <li>Teorias</li>
+                    </a>
+                    <a href="sueños.html">
+                        <li>Sueños</li>
+                    </a>
+                </ul>
+            </nav>
+        </div>
             <main>
                 <section>
                     <h2>· Supersticiosas o religiosas</h2>
@@ -90,6 +102,7 @@
             <footer>
                 <address>
                     Autor: Diego Ciriano González <br>
+                    Quiero un 10 o un pene, me conformo con un 8 <br>
                     Correu electrònic: dciriano2@gmail.com
                 </address>
                 <address>
@@ -97,5 +110,7 @@
                 </address>
             </footer>
         </div>
+        <script src="../JS/Scripts.js"></script>
     </body>
-</html>
+    
+    </html>

@@ -32,7 +32,7 @@ body::before {
     img {
         max-width: 50vw;
     }
-    .columna-izquierda {
+    header {
         flex: 100%;
         display: flex;
         flex-flow: column;
@@ -41,26 +41,21 @@ body::before {
         align-items: center;
         flex-basis: content;
         order: 0;
-        /*tot aixó per situar-ho en vertical amb model de reixeta*/
-    }
-    .columna-izquierda img{
-        flex: 20%
-    }
-    .columna-izquierda h1{
-        flex: 20%
-    }
-    .menu {
-        order: 1;
-        flex: 100%;
+        
     }
     main {
-        order: 2;
+        order: 1;
         flex: 100%;
     }
     nav {
         flex: 60%;
     }
-
+    .fila {
+        flex-wrap: wrap;
+    }
+    .fila * {
+        width: 100%;
+    }
 }
 /*Per portatils i ordinadors*/
 @media only screen and (min-width: 1001px) {
@@ -76,7 +71,12 @@ body::before {
         max-width: max-content;
         height: max-content;
     } /*per fer-la responsive y s'escali sempre a la seva proporció però sense superar el tamany original*/
-    .columna-izquierda {
+
+    main {
+        order: 1;
+        flex: 60%;
+    }
+    header {
         /*area logo web*/
         display: flex;
         flex-flow: column;
@@ -86,21 +86,16 @@ body::before {
         order: 3;
         max-width: 305px;
     }
-    .menu {
-        flex: 20%;
-        order: 0;
-        z-index: 2;
-    }
-    .precursor-menu {
-        order: 1;
-    }
-    main {
-        order: 2;
-        flex: 60%;
-    }
     nav {
         height: 100%;
         max-height: 500px;
+    }
+    .fila :first-child {
+        width: 25%;
+    }
+    .fila :last-child {
+        width: 75%;
+        padding: 12px;
     }
 }
 .cruz {
@@ -115,7 +110,7 @@ body::before {
     height: 0px;
     border: 2px black solid;
 }
-.columna-izquierda h1 { /*titol logo*/
+header h1 { /*titol logo*/
     font-family: sans-serif;
     font-weight: 900;
     font-size: 2rem;
@@ -148,6 +143,11 @@ nav a {
     text-decoration: none;
     color: black;
     font-weight: bold;
+}
+.precursor-menu {
+    position: fixed;
+    left: 10px;
+    top: 10px;
 }
 .menu {
     padding: 1%;
@@ -221,4 +221,54 @@ video { /*video responsive*/
 img {/*el faig blocks perque vull que ocupin tota la linea*/
     display: block;
     text-align: center;
+}
+div#form-email {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+fieldset {
+    width: 80%;
+    height: 80%;
+}
+form {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.fila {
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 12px;
+}
+.fila :last-child {
+    padding: 12px;
+}
+.botones {
+    align-self: end;
+    display: flex;
+    width: 75%;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+.botones * {
+    width: 25%;
+    padding: 12px;
+}
+input {
+    border-radius: 4px;
+    border-color: #ccc;
+}
+textarea {
+    height: 140px;
+    resize: none;
+    border-radius: 4px;
+    border-color: #ccc;
 }

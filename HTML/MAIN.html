@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,8 +9,7 @@
 
 <body>
     <div class="flex">
-        <div class="columna-boton"></div>
-        <div class="columna-izquierda">
+        <header>
             <img src="../MEDIA/man.png" alt="shrek_arabe">
             <h1>¿Has soñado alguna vez con este hombre?</h1>
             <div class="separador"></div>
@@ -20,32 +18,32 @@
                 <h3>Anuncios</h3>
                 <a href="https://www.youtube.com/watch?v=eBGIQ7ZuuiU"><img src="../MEDIA/JAMONACO.jpg" alt="jamon"></a>
             </aside>
-        </div>
+        </header>
         <div class="precursor-menu">
             <button type="button" onclick="menu('menu-0')">☰</button>
         </div>
-            <div class="menu" id="menu-0" >
-                <div class="cruz" onclick="menu('menu-0')">
-                    <a href="#" style="text-decoration: none; color: black;">
-                        <!--<a> cuya unica función és que el mouse reaccione cuando pasa por encima
-                            , no dirige a ningun sitio, por eso el #-->
-                        ×
-                    </a>
-                </div>
-                <nav>
-                    <ul>
-                        <a href="MAIN.html">
-                            <li>Inicio</li>
-                        </a>
-                        <a href="Teorias.html">
-                            <li>Teorias</li>
-                        </a>
-                        <a href="sueños.html">
-                            <li>Sueños</li>
-                        </a>
-                    </ul>
-                </nav>
+        <div class="menu" id="menu-0">
+            <div class="cruz" onclick="menu('menu-0')">
+                <a href="javascript:void(0)" style="text-decoration: none; color: black;">
+                    <!--<a> cuya unica función és que el mouse reaccione cuando pasa por encima
+                        , no dirige a ningun sitio, el javascript:void(0) evita que la pagina se recargue-->
+                    ×
+                </a>
             </div>
+            <nav>
+                <ul>
+                    <a href="MAIN.html">
+                        <li>Inicio</li>
+                    </a>
+                    <a href="Teorias.html">
+                        <li>Teorias</li>
+                    </a>
+                    <a href="sueños.html">
+                        <li>Sueños</li>
+                    </a>
+                </ul>
+            </nav>
+        </div>
         <main>
             <p>Este es un caso misterioso de una entidad conocida como shrek arabe que se manifiesta en los sueños de la
                 gente de alrededor de todas las ciudades del mundo cada noche.
@@ -76,7 +74,8 @@
             <div class="cont-img">
                 <img src="../MEDIA/creepy.png" alt="imagen_miedo">
             </div>
-            <p>Esta web se ha diseñado con el fin de ofrecer recursos divulgativos sobre este misterio y desentrañar de donde viene este fenomeno</p>
+            <p>Esta web se ha diseñado con el fin de ofrecer recursos divulgativos sobre este misterio y desentrañar de
+                donde viene este fenomeno</p>
         </main>
         <footer>
             <address>
