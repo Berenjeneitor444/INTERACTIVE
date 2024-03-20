@@ -13,6 +13,7 @@ body::before {
     la situo en una capa z -1 para que no se vea, la sacaré solo cuando se invoque el menu lateral. */
     content: "";
     position: fixed;
+    color: #131313;
     top: 0;
     left: 0;
     width: 100%;
@@ -56,6 +57,9 @@ body::before {
     .fila * {
         width: 100%;
     }
+    .botones {
+        width: 100%;
+    }
 }
 /*Per portatils i ordinadors*/
 @media only screen and (min-width: 1001px) {
@@ -73,8 +77,9 @@ body::before {
     } /*per fer-la responsive y s'escali sempre a la seva proporció però sense superar el tamany original*/
 
     main {
-        order: 1;
-        flex: 60%;
+        order: 0;
+        flex: 70%;
+
     }
     header {
         /*area logo web*/
@@ -82,8 +87,8 @@ body::before {
         flex-flow: column;
         background-color: #2D9596;
         padding: 20px;
-        flex: 20%;
-        order: 3;
+        flex: 30%;
+        order: 1;
         max-width: 305px;
     }
     nav {
@@ -96,6 +101,10 @@ body::before {
     .fila :last-child {
         width: 75%;
         padding: 12px;
+    }
+    .botones {
+        align-self: end;
+        width: 75%;
     }
 }
 .cruz {
@@ -115,6 +124,7 @@ header h1 { /*titol logo*/
     font-weight: 900;
     font-size: 2rem;
     color: #f2f2f2;
+    text-align: center;
 }
 
 nav ul {
@@ -222,7 +232,7 @@ img {/*el faig blocks perque vull que ocupin tota la linea*/
     display: block;
     text-align: center;
 }
-div#form-email {
+div.formularios {
     width: 100%;
     height: 100%;
     display: flex;
@@ -252,9 +262,7 @@ form {
     padding: 12px;
 }
 .botones {
-    align-self: end;
     display: flex;
-    width: 75%;
     justify-content: space-around;
     margin-top: 10px;
 }
@@ -271,4 +279,51 @@ textarea {
     resize: none;
     border-radius: 4px;
     border-color: #ccc;
+}
+.botones.login {
+    flex-direction: column;
+    align-items: center;
+}
+.botones.login input {
+    width: 100%;
+}
+input[type=button] {
+    color: black;
+    font-size: 14pt;
+}
+#padre-galeria {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#galeria {
+    width: 70%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.fila-imagen {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+.fila-imagen * {
+    width: 20%;
+    height: auto;
+    margin: 10px;
+}
+
+#muro {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+#muro *{
+flex: 20%;
 }

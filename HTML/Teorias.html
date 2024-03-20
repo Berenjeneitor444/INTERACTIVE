@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,17 +14,17 @@
             <img src="../MEDIA/man.png" alt="shrek_arabe">
             <h1>¿Has soñado alguna vez con este hombre?</h1>
             <div class="separador"></div>
-            <h1 class="titulo">Teorias</h1>
+            <h1 class="titulo">Historia</h1>
             <aside>
                 <h3>Anuncios</h3>
                 <a href="https://www.youtube.com/watch?v=eBGIQ7ZuuiU"><img src="../MEDIA/JAMONACO.jpg" alt="jamon"></a>
             </aside>
         </header>
         <div class="precursor-menu">
-            <button type="button" onclick="menu('menu-2')">☰</button>
+            <button type="button" onclick="menu()">☰</button>
         </div>
-        <div class="menu" id="menu-2">
-            <div class="cruz" onclick="menu('menu-2')">
+        <div class="menu">
+            <div class="cruz" onclick="menu()">
                 <a href="javascript:void(0)" style="text-decoration: none; color: black;">
                     <!--<a> cuya unica función és que el mouse reaccione cuando pasa por encima
                         , no dirige a ningun sitio, el javascript:void(0) evita que la pagina se recargue-->
@@ -41,76 +42,86 @@
                     <a href="sueños.html">
                         <li>Sueños</li>
                     </a>
+                    <a href="contactame.html">
+                        <li>Contactame</li>
+                    </a>
+                    <a href="Comparte tus sueños.html">
+                        <li>Comparte tus sueños</li>
+                    </a>
+                    <a href="galeria.html">
+                        <li>galeria</li>
+                    </a>
+                    <button type="button" onclick="modoNocturno()">Cambiar tema</button>
                 </ul>
             </nav>
         </div>
-            <main>
-                <section>
-                    <h2>· Supersticiosas o religiosas</h2>
-                    <article>
-                        <h3>Teoría religiosa</h3>
-                        <img src="https://i.ytimg.com/vi/aighXfsZkPg/sddefault.jpg" alt="Dios">
-                        <p>
-                            Existe la creencia de que shrek arabe es una forma de Dios de comunicarse con nosotros.
-                            Muchos catedráticos religiosos afirman que podría ser algun tipo de mensaje de su parte,
-                            conteniendo ironía o haciendonos reflexionar sobre ciertos temas, o incluso a veces un castigo divino.
-                            sea como sea, es sabido que el todopoderoso tiende a jugar con sus invenciones cuando
-                            se aburre
-                        </p>
-                    </article>
-                    <article>
-                        <h3>Teoría espiritu</h3>
-                        <p>
-                            Otra popular teoría supersticiosa indica que hay registros de que shrek arabe
-                            existio en el siglo XIV en la peninsula iberica arabe en pleno periodo de reconquista,
-                            siendo un poderoso lider del pueblo árabe. Tiempo después múrio a mano de cristianos,
-                            por eso ahora se rumorea que su espiritu se manifiesta en el subsconciente de la gente
-                            en busca de venganza indiscriminada contra el pueblo que lo mató, mientras que
-                            a su pueblo le da sueños gratificantes para apoyar a los suyos
-                        </p>
-                    </article>
-                    <article>
-                        <h3>Teoria posesión</h3>
-                        <p>
-                            Se rumorea que estas apariciones están ligadas a la posesión de un demonio,
-                            el cual disfruta de atormentar la mente progresivamente de sus victimas
-                            con tal retrato tan bizarro. De este modo sus victimas poco a poco pierden la razon
-                            y quedan aisladas, hasta que llega el punto que se quitan la vida.
-                        </p>
-                    </article>
-                </section>
-                <section>
-                    <h2>· Psicolgicas</h2>
-                    <article>
-                        <h3>Teoria arquetipica</h3>
-                        <p>
-                            Esta teoria sugiere que shrek arabe es una imagen preestablecida en el subsconsciente
-                            del ser humano, el cual se manifiesta en fases concretas de nuestra vida en los sueños
-                            como intento de nuestro subsconsciente de darnos algun mensaje sobre nuestra situación
-                        </p>
-                    </article>
-                    <article>
-                        <h3>Teoria creativa</h3>
-                        <p>
-                            Dado a que esta es una figura popular, se sugiere que por explosiones creativas
-                            de nuestro cerebro, en nuestros sueños se coge esta conocida figura para interpretar
-                            sueños carentes de sentido alguno, como la mayoria de nuestros sueños.
-                        </p>
-                    </article>
-                </section>
-            </main>
-            <footer>
-                <address>
-                    Autor: Diego Ciriano González <br>
-                    Quiero un 10 o un pene, me conformo con un 8 <br>
-                    Correu electrònic: dciriano2@gmail.com
-                </address>
-                <address>
-                    <a href="https://www.cifpfbmoll.eu">Centre Integrat de Formació Professional Francesc de Borjamoll</a>
-                </address>
-            </footer>
-        </div>
-        <script src="../JS/Scripts.js"></script>
-    </body>
-    
-    </html>
+        <main>
+            <section>
+                <h2>· Supersticiosas o religiosas</h2>
+                <article>
+                    <h3>Teoría religiosa</h3>
+                    <img src="https://i.ytimg.com/vi/aighXfsZkPg/sddefault.jpg" alt="Dios">
+                    <p>
+                        Existe la creencia de que shrek arabe es una forma de Dios de comunicarse con nosotros.
+                        Muchos catedráticos religiosos afirman que podría ser algun tipo de mensaje de su parte,
+                        conteniendo ironía o haciendonos reflexionar sobre ciertos temas, o incluso a veces un castigo
+                        divino.
+                        sea como sea, es sabido que el todopoderoso tiende a jugar con sus invenciones cuando
+                        se aburre
+                    </p>
+                </article>
+                <article>
+                    <h3>Teoría espiritu</h3>
+                    <p>
+                        Otra popular teoría supersticiosa indica que hay registros de que shrek arabe
+                        existio en el siglo XIV en la peninsula iberica arabe en pleno periodo de reconquista,
+                        siendo un poderoso lider del pueblo árabe. Tiempo después múrio a mano de cristianos,
+                        por eso ahora se rumorea que su espiritu se manifiesta en el subsconciente de la gente
+                        en busca de venganza indiscriminada contra el pueblo que lo mató, mientras que
+                        a su pueblo le da sueños gratificantes para apoyar a los suyos
+                    </p>
+                </article>
+                <article>
+                    <h3>Teoria posesión</h3>
+                    <p>
+                        Se rumorea que estas apariciones están ligadas a la posesión de un demonio,
+                        el cual disfruta de atormentar la mente progresivamente de sus victimas
+                        con tal retrato tan bizarro. De este modo sus victimas poco a poco pierden la razon
+                        y quedan aisladas, hasta que llega el punto que se quitan la vida.
+                    </p>
+                </article>
+            </section>
+            <section>
+                <h2>· Psicolgicas</h2>
+                <article>
+                    <h3>Teoria arquetipica</h3>
+                    <p>
+                        Esta teoria sugiere que shrek arabe es una imagen preestablecida en el subsconsciente
+                        del ser humano, el cual se manifiesta en fases concretas de nuestra vida en los sueños
+                        como intento de nuestro subsconsciente de darnos algun mensaje sobre nuestra situación
+                    </p>
+                </article>
+                <article>
+                    <h3>Teoria creativa</h3>
+                    <p>
+                        Dado a que esta es una figura popular, se sugiere que por explosiones creativas
+                        de nuestro cerebro, en nuestros sueños se coge esta conocida figura para interpretar
+                        sueños carentes de sentido alguno, como la mayoria de nuestros sueños.
+                    </p>
+                </article>
+            </section>
+        </main>
+        <footer>
+            <address>
+                Autor: Diego Ciriano González <br>
+                Correu electrònic: dciriano2@gmail.com
+            </address>
+            <address>
+                <a href="https://www.cifpfbmoll.eu">Centre Integrat de Formació Professional Francesc de Borjamoll</a>
+            </address>
+        </footer>
+    </div>
+    <script src="../JS/Scripts.js"></script>
+</body>
+
+</html>

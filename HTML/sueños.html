@@ -8,23 +8,23 @@
     <link rel="stylesheet" href="../CSS/estilos.css">
 </head>
 
-<body>
+<body onload="cargarHistorias()">
     <div class="flex">
         <header>
             <img src="../MEDIA/man.png" alt="shrek_arabe">
             <h1>¿Has soñado alguna vez con este hombre?</h1>
             <div class="separador"></div>
-            <h1 class="titulo">Sueños</h1>
+            <h1 class="titulo">Historia</h1>
             <aside>
                 <h3>Anuncios</h3>
                 <a href="https://www.youtube.com/watch?v=eBGIQ7ZuuiU"><img src="../MEDIA/JAMONACO.jpg" alt="jamon"></a>
             </aside>
         </header>
         <div class="precursor-menu">
-            <button type="button" onclick="menu('menu-1')">☰</button>
+            <button type="button" onclick="menu()">☰</button>
         </div>
-        <div class="menu" id="menu-1">
-            <div class="cruz" onclick="menu('menu-1')">
+        <div class="menu">
+            <div class="cruz" onclick="menu()">
                 <a href="javascript:void(0)" style="text-decoration: none; color: black;">
                     <!--<a> cuya unica función és que el mouse reaccione cuando pasa por encima
                         , no dirige a ningun sitio, el javascript:void(0) evita que la pagina se recargue-->
@@ -42,27 +42,24 @@
                     <a href="sueños.html">
                         <li>Sueños</li>
                     </a>
+                    <a href="contactame.html">
+                        <li>Contactame</li>
+                    </a>
+                    <a href="Comparte tus sueños.html">
+                        <li>Comparte tus sueños</li>
+                    </a>
+                    <a href="galeria.html">
+                        <li>galeria</li>
+                    </a>
+                    <button type="button" onclick="modoNocturno()">Cambiar tema</button>
                 </ul>
             </nav>
         </div>
         <main>
-            <p>Varios usuarios han retratado algunos de sus sueños con esta entidad:</p>
-            <div class="cont-img">
-                <img src="https://i.ytimg.com/vi/Yw6LZWEWaVs/hqdefault.jpg" alt="shrek_maldito">
-                <img src="https://scottwritesstuff.com/wp-content/uploads/2020/09/shrek-creepy-top.png"
-                    alt="shrek-creepy">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTD097AjnPRjmd3sJpI0iuZrc5PgnnFmvRVvQ&usqp=CAU"
-                    alt="shrek diver">
-                <img src="https://static.wikia.nocookie.net/supermarioglitchy4/images/7/72/Mike_Shrekowski.png/revision/latest/zoom-crop/width/500/height/500?cb=20230222231736"
-                    alt="shrek wazouski">
-            </div>
-            <p>A continuación el sueño más perturbador:</p>
-            <video src="../MEDIA/chuerk bailando.mp4" controls preload="auto"></video>
         </main>
         <footer>
             <address>
                 Autor: Diego Ciriano González <br>
-                Quiero un 10 o un pene, me conformo con un 8 <br>
                 Correu electrònic: dciriano2@gmail.com
             </address>
             <address>

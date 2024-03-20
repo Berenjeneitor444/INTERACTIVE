@@ -14,22 +14,20 @@
             <img src="../MEDIA/man.png" alt="shrek_arabe">
             <h1>¿Has soñado alguna vez con este hombre?</h1>
             <div class="separador"></div>
-            <h1 class="titulo">¡Contáctame!</h1>
+            <h1 class="titulo">Historia</h1>
             <aside>
                 <h3>Anuncios</h3>
                 <a href="https://www.youtube.com/watch?v=eBGIQ7ZuuiU"><img src="../MEDIA/JAMONACO.jpg" alt="jamon"></a>
             </aside>
         </header>
         <div class="precursor-menu">
-            <button type="button" onclick="menu('menu-3')">☰</button>
+            <button type="button" onclick="menu()">☰</button>
         </div>
-        <div class="menu" id="menu-3">
-            <div class="cruz" onclick="menu('menu-3')">
+        <div class="menu">
+            <div class="cruz" onclick="menu()">
                 <a href="javascript:void(0)" style="text-decoration: none; color: black;">
-                    <!--
-                        <a> cuya unica función és que el mouse reaccione cuando pasa por encima
-                        , no dirige a ningun sitio, el javascript:void(0) evita que la pagina se recargue
-                    -->
+                    <!--<a> cuya unica función és que el mouse reaccione cuando pasa por encima
+                        , no dirige a ningun sitio, el javascript:void(0) evita que la pagina se recargue-->
                     ×
                 </a>
             </div>
@@ -47,21 +45,28 @@
                     <a href="contactame.html">
                         <li>Contactame</li>
                     </a>
+                    <a href="Comparte tus sueños.html">
+                        <li>Comparte tus sueños</li>
+                    </a>
+                    <a href="galeria.html">
+                        <li>galeria</li>
+                    </a>
+                    <button type="button" onclick="modoNocturno()">Cambiar tema</button>
                 </ul>
             </nav>
         </div>
         <main>
-            <div id="form-email">
+            <div class="formularios">
                 <fieldset>
                     <legend>chicos estoy comiendo mortadela</legend>
-                    <form action="mailto:dciriano2@gmail.com" method="get" id="contacto" onsubmit="return validacion_email()">
+                    <form action="" method="get">
                         <div class="fila">
                             <label for="email">Tu correo:</label>
                             <input type="email" name="email" id="email" placeholder="Email">
                         </div>
                         <div class="fila">
                             <label for="asunto">Asunto:</label>
-                            <input type="text" name="asunto" id="asunto" placeholder="Asunto"> 
+                            <input type="text" name="asunto" id="asunto" placeholder="Asunto">
                         </div>
                         <div class="fila">
                             <label for="cuerpo">Cuerpo:</label>
@@ -79,7 +84,6 @@
         <footer>
             <address>
                 Autor: Diego Ciriano González <br>
-                Quiero un 10 o un pene, me conformo con un 8 <br>
                 Correu electrònic: dciriano2@gmail.com
             </address>
             <address>
