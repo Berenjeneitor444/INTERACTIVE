@@ -55,7 +55,8 @@ les notificacions surten per exemple en alerts per validar els formularis o quan
 
 ## Notes adicionals
 
-He cambiat els estils respecte a la darrera entrega y he refactoritzat una mica el css, m'agradaria haver-ho deixat millor pero
+He cambiat els estils respecte a la darrera entrega y he refactoritzat una mica el css, ara está tot amb flex,
+he llevat el grid, m'agradaria haver-ho deixat millor pero
 no he tingut més hores, així que es un poc fea :C
 
 ## Divisió de feina
